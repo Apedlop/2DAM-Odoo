@@ -13,15 +13,15 @@ class Escuela(models.Model):
     email = fields.Char(string='Correo Electrónico', required=True)
 
 class Curso(models.Model):
-    _name = "modulo_escuela_vela.curso"  
-    _description = "Curso de Vela"  
+    _name = 'modulo_escuela_vela.curso'
+    _description = 'Curso de Escuela Vela'
 
     titulo = fields.Char(string='Título', required=True)
-    duracion_dias = fields.Integer(string='Duración (días)', required=True)
-    duracion_horas = fields.Float(string='Duración (horas)', required=True)
-    price = fields.Float(string='Precio', required=True)
-    escuela_id = fields.Many2one('modulo_escuela_vela.escuela', string='Escuela', required=True)
-
+    duracion_dias = fields.Integer(string='Duración en días')
+    duracion_horas = fields.Integer(string='Duración en horas')
+    precio = fields.Float(string='Precio', required=True)
+    escuela_id = fields.Many2one('modulo_escuela_vela.escuela', string='Escuela')
+    
 class Monitor(models.Model):
     _name = "modulo_escuela_vela.monitor"  
     _description = "Monitor de Vela"  
