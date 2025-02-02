@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "modulo_escuela_vela",
+    'name': "FCTIES",
 
-    'summary': "Módulo para gestionar una cadena de Escuelas de vela",
+    'summary': "Módulo para gestionar la información sobre los alumnos de FP y las empresas colaboradorasen la que están haciendo o han hecho prácticas de FCT.",
 
     'description': """
-Módulo para gestionar una cadena de Escuelas de vela.
+Módulo para gestionar la información sobre los alumnos de FP y las empresas colaboradorasen la que están haciendo o han hecho prácticas de FCT.
     """,
 
     'author': "Ángela Pedrera",
@@ -22,15 +22,13 @@ Módulo para gestionar una cadena de Escuelas de vela.
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',
+        #'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'reports/informe_escuela_vela.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
-    'application': True,
 }
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- Reporte en CSV para Alumnos -->
+  <report
+    id="modulo_escuela_vela.informe_alumno_csv"
+    string="Informe de Alumnos (CSV)" 
+    model="modulo_escuela_vela.alumno"
+    report_type="qweb-csv"
+    name="modulo_escuela_vela.informe_alumno_csv_view"
+    file="modulo_escuela_vela.informe_alumno_csv_view"/>
+
+  <!-- Plantilla para el informe en CSV -->
+  <template id="informe_alumno_csv_view">
+    <!-- Encabezados -->
+    "Nombre","Teléfono","Correo Electrónico","Número de Matrícula","Escuela"
+    <t t-foreach="docs" t-as="alumno">
+      <t t-esc="alumno.name"/>,"<t t-esc="alumno.telefono"/>","<t t-esc="alumno.email"/>","<t t-esc="alumno.matricula"/>","<t t-esc="alumno.escuela_id.name"/>"
+    </t>
+  </template>
+</odoo>

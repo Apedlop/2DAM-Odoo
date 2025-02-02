@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_escuela_admin,access_escuela_admin,model_modulo_escuela_vela_escuela,base.group_system,1,1,1,1
+access_curso_admin,access_curso_admin,model_modulo_escuela_vela_curso,base.group_system,1,1,1,1
+access_monitor_admin,access_monitor_admin,model_modulo_escuela_vela_monitor,base.group_system,1,1,1,1
+access_alumno_admin,access_alumno_admin,model_modulo_escuela_vela_alumno,base.group_system,1,1,1,1
+
+access_curso_monitor,access_curso_monitor,model_modulo_escuela_vela_curso,base.group_user,1,1,0,0
+access_alumno_monitor,access_alumno_monitor,model_modulo_escuela_vela_alumno,base.group_user,1,1,0,0
+
+access_curso_alumno,access_curso_alumno,model_modulo_escuela_vela_curso,base.group_public,1,0,0,0
+access_alumno_alumno,access_alumno_alumno,model_modulo_escuela_vela_alumno,base.group_public,1,0,0,0
