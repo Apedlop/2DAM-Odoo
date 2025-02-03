@@ -87,7 +87,7 @@
       </record>
 
       <!-- Menú principal -->
-      <menuitem id="fcties.menu_root" name="FCTIES"/>
+      <menuitem id="fcties.menu_root" name="FCT"/>
 
       <!-- Menú de Alumnos -->
       <menuitem name="Alumnos" id="fcties.alumnos_menu" parent="fcties.menu_root" action="fcties.alumnos_action_window"/>

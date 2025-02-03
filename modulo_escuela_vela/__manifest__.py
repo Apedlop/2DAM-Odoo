@@ -25,12 +25,16 @@ Módulo para gestionar una cadena de Escuelas de vela.
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'reports/informe_escuela_vela.xml'
+        'reports/informe_escuela_vela.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
+
+    'installable': True,
     'application': True,
+    'images': ['modulo_escuela_vela/static/barco_vela.png'],
+
 }
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="fcties_coordinador" model="res.groups">
+        <field name="name">FCTIES / Coordinador</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+    <record id="fcties_profesor" model="res.groups">
+        <field name="name">FCTIES / Profesor</field>
+        <field name="category_id" ref="base.module_category_hidden"/>
+    </record>
+</odoo>

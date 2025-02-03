@@ -23,6 +23,12 @@ class Alumnos(models.Model):
     correo_electronico = fields.Char(string="Correo Electrónico")
     telefono = fields.Char(string="Teléfono")
 
+    # Relación con Empresas donde ha hecho prácticas
+    empresas_practicas = fields.Many2many(
+        'fcties.empresa',
+        string='Empresas donde ha hecho prácticas',
+    )
+
     # Campo calculado para la nota en formato texto
     @api.depends('nota_media')
     def _compute_nota_media_texto(self):
@@ -53,3 +59,10 @@ class Empresa(models.Model):
     telefono_contacto = fields.Char(string="Teléfono de Contacto", required=True)
     correo_electronico = fields.Char(string="Correo Electrónico", required=True)
     direccion = fields.Text(string="Dirección", required=True)
+
+    # Relación con Alumnos que han hecho las prácticas en la empresa
+    alumnos_practicas = fields.Many2many(
+        'fcties.alumnos',
+        string='Alumnos en Prácticas',
+        help='Lista de alumnos que han realizado prácticas en esta empresa'
+    )

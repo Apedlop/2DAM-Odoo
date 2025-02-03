@@ -22,7 +22,8 @@ Módulo para gestionar la información sobre los alumnos de FP y las empresas co
 
     # always loaded
     'data': [
-        #'security/ir.model.access.csv',
+        'security/security.xml',
+        'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],
@@ -30,5 +31,9 @@ Módulo para gestionar la información sobre los alumnos de FP y las empresas co
     'demo': [
         'demo/demo.xml',
     ],
+
+    'installable': True,
+    'application': True,
+    'icon': 'static/edificio-de-oficinas.png',
 }
 
