@@ -3,3 +3,5 @@ access_fcties_alumnos_coordinador,Alumnos Coordinador,model_fcties_alumnos,fctie
 access_fcties_alumnos_profesor,Alumnos Profesor,model_fcties_alumnos,fcties_profesor,1,1,0,0
 access_fcties_empresa_coordinador,Empresa Coordinador,model_fcties_empresa,fcties_coordinador,1,1,1,1
 access_fcties_empresa_profesor,Empresa Profesor,model_fcties_empresa,fcties_profesor,1,0,0,0
+access_fcties_alumnos,fcties.alumnos,model_fcties_alumnos,,1,1,1,1
+access_fcties_empresa,fcties.empresa,model_fcties_empresa,,1,1,1,1

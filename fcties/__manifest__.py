@@ -2,10 +2,10 @@
 {
     'name': "FCTIES",
 
-    'summary': "Módulo para gestionar la información sobre los alumnos de FP y las empresas colaboradorasen la que están haciendo o han hecho prácticas de FCT.",
+    'summary': "Módulo para gestionar la información de alumnos de FP y empresas colaboradoras.",
 
     'description': """
-Módulo para gestionar la información sobre los alumnos de FP y las empresas colaboradorasen la que están haciendo o han hecho prácticas de FCT.
+Módulo para gestionar la información sobre los alumnos de FP y las empresas colaboradoras en la que están haciendo o han hecho prácticas de FCT.
     """,
 
     'author': "Ángela Pedrera",

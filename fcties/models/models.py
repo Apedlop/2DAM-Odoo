@@ -1,4 +1,6 @@
-from odoo import models, fields, api
+from odoo import models, fields
+
+from odoo import models, fields
 
 class Alumnos(models.Model):
     _name = 'fcties.alumnos'
@@ -23,11 +25,8 @@ class Alumnos(models.Model):
     correo_electronico = fields.Char(string="Correo Electrónico")
     telefono = fields.Char(string="Teléfono")
 
-    # Relación con Empresas donde ha hecho prácticas
-    empresas_practicas = fields.Many2many(
-        'fcties.empresa',
-        string='Empresas donde ha hecho prácticas',
-    )
+    # Relación Many2one con Empresa
+    empresa_id = fields.Many2one('fcties.empresa', string='Empresa')
 
     # Campo calculado para la nota en formato texto
     @api.depends('nota_media')
@@ -45,10 +44,6 @@ class Alumnos(models.Model):
     # Campo de nota media en formato texto
     nota_media_texto = fields.Char(string="Nota Media (Texto)", compute='_compute_nota_media_texto', store=True)
 
-    # Filtro para obtener alumnos con nota media > 8
-    def alumnos_nota_mayor_8(self):
-        return self.search([('nota_media', '>', 8)])
-
 class Empresa(models.Model):
     _name = 'fcties.empresa'
     _description = 'Empresa'
@@ -60,9 +55,5 @@ class Empresa(models.Model):
     correo_electronico = fields.Char(string="Correo Electrónico", required=True)
     direccion = fields.Text(string="Dirección", required=True)
 
-    # Relación con Alumnos que han hecho las prácticas en la empresa
-    alumnos_practicas = fields.Many2many(
-        'fcties.alumnos',
-        string='Alumnos en Prácticas',
-        help='Lista de alumnos que han realizado prácticas en esta empresa'
-    )
+    # Relación One2many con Alumnos
+    alumnos_practicas = fields.One2many('fcties.alumnos', 'empresa_id', string='Alumnos en Prácticas')
