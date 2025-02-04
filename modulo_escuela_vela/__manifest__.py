@@ -34,7 +34,7 @@ Módulo para gestionar una cadena de Escuelas de vela.
 
     'installable': True,
     'application': True,
-    'images': ['modulo_escuela_vela/static/barco_vela.png'],
+    'icon': '/modulo_escuela_vela/static/images.png',
 
 }
 
