@@ -1,0 +1,22 @@
+<odoo>
+    <template id="report_alumno_template">
+        <t t-call="web.basic_layout">
+            <div class="page">
+                <h2>Informe de Alumno</h2>
+                <p><strong>Nombre:</strong> <t t-esc="object.name"/></p>
+                <p><strong>Teléfono:</strong> <t t-esc="object.telefono"/></p>
+                <p><strong>Correo Electrónico:</strong> <t t-esc="object.email"/></p>
+                <p><strong>Número de Matrícula:</strong> <t t-esc="object.matricula"/></p>
+                <p><strong>Escuela:</strong> <t t-esc="object.escuela_id.name"/></p>
+            </div>
+        </t>
+    </template>
+   <record model="ir.actions.report" id="report_alumno">
+        <field name="name">Informe de Alumno</field>
+        <field name="model">modulo_escuela_vela.alumno</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">modulo_escuela_vela.report_alumno</field>
+
+    </record>
+
+</odoo>

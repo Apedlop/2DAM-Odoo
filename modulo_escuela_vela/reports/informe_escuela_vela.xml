@@ -14,7 +14,8 @@
     <!-- Encabezados -->
     "Nombre","Teléfono","Correo Electrónico","Número de Matrícula","Escuela"
     <t t-foreach="docs" t-as="alumno">
-      <t t-esc="alumno.name"/>,"<t t-esc="alumno.telefono"/>","<t t-esc="alumno.email"/>","<t t-esc="alumno.matricula"/>","<t t-esc="alumno.escuela_id.name"/>"
+      <t t-out="'\n'"/>
+      "<t t-out="alumno.name"/>","<t t-out="alumno.telefono"/>","<t t-out="alumno.email"/>","<t t-out="alumno.matricula"/>","<t t-out="alumno.escuela_id.name"/>"
     </t>
   </template>
 </odoo>

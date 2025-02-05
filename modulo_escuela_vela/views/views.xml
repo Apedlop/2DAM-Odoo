@@ -154,6 +154,9 @@
             <field name="email"/>
             <field name="escuela_id"/>
           </group>
+         
+          <button class="btn-primary" type="object" name="report_alumno"/>
+       
         </form>
       </field>
     </record>

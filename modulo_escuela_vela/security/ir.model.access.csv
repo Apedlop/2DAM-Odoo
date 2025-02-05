@@ -3,3 +3,4 @@ access_modulo_escuela_vela_escuela,access_modulo_escuela_vela_escuela,model_modu
 access_modulo_escuela_vela_curso,access_modulo_escuela_vela_curso,model_modulo_escuela_vela_curso,,1,1,1,1
 access_modulo_escuela_vela_monitor,access_modulo_escuela_vela_monitor,model_modulo_escuela_vela_monitor,,1,1,1,1
 access_modulo_escuela_vela_alumno,access_modulo_escuela_vela_alumno,model_modulo_escuela_vela_alumno,,1,1,1,1
+access_alumno_user,Acceso a Alumnos,model_modulo_escuela_vela_alumno,,1,0,0,0
